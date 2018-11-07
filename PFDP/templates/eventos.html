@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+   <h1>Eventos</h1>
+   <ul class="list-group">
+       {% for evento in eventos %}
+           <li class="list-group-item"><a href=Eventos/{{evento.id}}>{{evento.title}}</a></li>
+       {% endfor %}
+   </ul>
+   
+{% endblock %}
+
